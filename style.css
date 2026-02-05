@@ -229,29 +229,50 @@ nav {
 }
 
 @media (max-width: 600px) {
+    header {
+        padding: 8px 0;
+    }
+
+    nav {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links li a {
+        padding: 4px 8px;
+        font-size: 11px;
+        border-radius: 15px;
+    }
+
     .watermark {
         bottom: 10px;
         right: 10px;
         font-size: 10px;
     }
+
     .watermark span {
         font-size: 12px;
     }
+
     .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
     }
-    .nav-links li a {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
+
     .content-box {
-        padding: 25px;
+        padding: 20px;
+        margin: 10px;
     }
+
     .image-wrapper img {
-        max-width: 200px;
+        max-width: 160px;
     }
+
     .btn {
-        padding: 10px 25px;
-        font-size: 1rem;
+        padding: 8px 20px;
+        font-size: 0.9rem;
     }
 }
