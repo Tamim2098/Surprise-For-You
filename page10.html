@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Your Tickets!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Grid layout for the tickets */
+        .ticket-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columns */
+            gap: 20px;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .ticket-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0; /* Hidden before animation starts */
+            animation: popIn 0.6s ease-out forwards;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .ticket-img:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        /* Animation Delays (So they appear one by one) */
+        .t1 { animation-delay: 0.2s; }
+        .t2 { animation-delay: 0.5s; }
+        .t3 { animation-delay: 0.8s; }
+        .t4 { animation-delay: 1.1s; }
+
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Responsive: Stack vertically on mobile */
+        @media (max-width: 600px) {
+            .ticket-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Page 3</a></li>
+                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="page5.html">Page 5</a></li>
+                <li><a href="page6.html">Page 6</a></li>
+                <li><a href="page7.html">Page 7</a></li>
+                <li><a href="page8.html">Page 8</a></li>
+                <li><a href="page9.html">Page 9</a></li>
+                <li><a href="page10.html" class="active">Page 10</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-box">
+            
+            <h1 class="title" style="font-size: 2rem;">Redeem anytime! 🎟️</h1>
+
+            <div class="ticket-container">
+                <img src="ticket1.png" alt="Hugs Ticket" class="ticket-img t1">
+                <img src="ticket2.png" alt="Movie Ticket" class="ticket-img t2">
+                <img src="ticket3.png" alt="Kisses Ticket" class="ticket-img t3">
+                <img src="ticket4.png" alt="Attention Ticket" class="ticket-img t4">
+            </div>
+
+        </div>
+    </main>
+
+    <a href="page9.html" class="floating-back">
+        ↩
+    </a>
+    <div class="watermark">
+        Made with ❤️ by <span>TAMIM TAJWAR</span>
+    </div>
+</body>
+</html>

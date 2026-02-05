@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the letter on this page */
+        .message-text {
+            font-family: 'Poppins', sans-serif;
+            color: #880e4f; /* Dark pink/maroon color */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .love-img {
+            max-width: 150px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Page 3</a></li>
+                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="page5.html">Page 5</a></li>
+                <li><a href="page6.html">Page 6</a></li>
+                <li><a href="#page7">Page 7</a></li>
+                <li><a href="page8.html" class="active">Page 8</a></li>
+                <li><a href="#page9">Page 9</a></li>
+                <li><a href="#page10">Page 10</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-box" style="max-width: 800px;"> <p class="message-text">
+                Thank you for saying yes to me, to us, to something that isn't always easy but is always real. Thank you for trusting what we have, even when it lives across cities and time zones. I promise I'll keep choosing you on the good days, the boring days, and especially on the days when distance feels unfair.
+                <br><br>
+                One day, this waiting will turn into moments we'll laugh about — how we survived on calls, screenshots, and "I miss you" texts. Until then, I'll hold onto this yes like my favourite promise.
+                <br><br>
+                So here's me, officially yours, smiling at a screen and feeling closer to you than ever.
+            </p>
+
+            <div class="image-wrapper">
+                <img src="love_heart.png" alt="I Love You" class="love-img" style="border: none; box-shadow: none;">
+            </div>
+
+        </div>
+    </main>
+
+    <a href="page6.html" class="floating-back">
+        ↩
+    </a>
+    <div class="watermark">
+        Made with ❤️ by <span>TAMIM TAJWAR</span>
+    </div>
+</body>
+</html>
